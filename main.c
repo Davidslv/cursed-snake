@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
   timeout(TICKRATE);
   keypad(stdscr, TRUE);
 
-  printw("Snake v. 0.1 - Press x to quit...");
+  printw("Cursed Snake v. 0.1 - Press q to quit...");
 
   refresh();
 
@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
   int current_direction = RIGHT;
 
 
-  while((ch = getch()) != 'x')
+  while((ch = getch()) != 'q')
   {
     move_snake(world, current_direction, snake);
 
